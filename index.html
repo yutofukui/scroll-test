@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Visual UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="patternCanvas"></canvas>
+  <!-- スクロール倍率UI -->
+  <div class="ui-panel">
+    <input type="range" min="0.2" max="5" step="0.1" value="1" id="scrollSlider">
+    <div class="level-indicator" id="levelIndicator">●●</div>
+  </div>
+
+  <!-- スクロール進行バー -->
+  <div class="scroll-bar-container">
+    <div class="scroll-bar" id="scrollBar"></div>
+  </div>
+
+  <!-- スクロール％表示 -->
+  <div class="scroll-percent" id="scrollPercent">0%</div>
+
+  <div id="buttonContainer"></div>
+
+  <!-- 中身 -->
+  <div class="content" id="scrollable">
+    <div class="spacer"></div>
+  </div>
+  
+  <script src="pattern.js"></script>
+  <script src="script.js"></script>
+  <script src="buttons.js"></script>
+</body>
+</html>
