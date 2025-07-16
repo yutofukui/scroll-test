@@ -5,6 +5,42 @@ body {
     background: hsl(200, 50%, 10%);
     transition: background 0.2s ease;
   }
+  .fixed-nav-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: #ff006e;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(255, 0, 110, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 1000;
+  }
+  
+  .fixed-nav-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 110, 0.9);
+  }
+  /* style.css に追加 */
+.section-overlay {
+    position: fixed; top: 60%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 32px;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 200;
+  }
+  .section-overlay.show {
+    opacity: 1;
+  }
   
   .ui-panel {
     position: fixed;

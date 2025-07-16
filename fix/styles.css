@@ -1,0 +1,108 @@
+/* ベース */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ヘッダー */
+  header {
+    background: #2a3eb1;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+  header p {
+    margin: 0.5rem 0 0;
+  }
+  
+  /* ナビ */
+  nav {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  nav li + li {
+    margin-left: 1rem;
+  }
+  nav a {
+    text-decoration: none;
+    color: #2a3eb1;
+    font-weight: bold;
+  }
+  
+  /* メインセクション */
+  main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  section {
+    margin-bottom: 2rem;
+  }
+  section h2 {
+    border-bottom: 2px solid #2a3eb1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* 表・リスト */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+  ul, ol {
+    padding-left: 1.2rem;
+  }
+  
+  /* フッター */
+  footer {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* レスポンシブ微調整 */
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    main { padding: 1rem; }
+  }
+
+  /* 組織情報内のロゴセクション */
+.logo-section {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  max-height: 80px;
+  margin-right: 1rem;
+}
+.cc-license {
+  color: #2a3eb1;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.cc-license:hover {
+  text-decoration: underline;
+}
